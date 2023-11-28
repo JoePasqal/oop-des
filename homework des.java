@@ -72,7 +72,7 @@ public class Homework {
         public Document(long id, String number) {
             this.id = id;
             this.number = number;
-        }git remote add origin https://github.com/JoePasqal/oop-des.git
+        }
 
         public long getId() {
             return id;
