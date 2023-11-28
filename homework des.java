@@ -15,7 +15,6 @@ public class Homework {
         byte[] jsonReport = reportService.createReport(document, "json");
         byte[] xmlReport = reportService.createReport(document, "xml");
 
-        // Здесь вы можете обработать или сохранить сгенерированные отчеты
     }
 
     static class ReportService {
@@ -41,7 +40,6 @@ public class Homework {
     static class PdfReportStrategy implements ReportStrategy {
         @Override
         public byte[] createReport(Document document) {
-            // Логика создания PDF отчета
             System.out.println("Creating PDF report for document: " + document.getNumber());
             return new byte[0]; // Заглушка
         }
@@ -50,7 +48,6 @@ public class Homework {
     static class JsonReportStrategy implements ReportStrategy {
         @Override
         public byte[] createReport(Document document) {
-            // Логика создания JSON отчета
             System.out.println("Creating JSON report for document: " + document.getNumber());
             return new byte[0]; // Заглушка
         }
@@ -59,7 +56,6 @@ public class Homework {
     static class XmlReportStrategy implements ReportStrategy {
         @Override
         public byte[] createReport(Document document) {
-            // Логика создания XML отчета
             System.out.println("Creating XML report for document: " + document.getNumber());
             return new byte[0]; // Заглушка
         }
